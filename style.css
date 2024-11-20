@@ -1,0 +1,173 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Monument+Extended:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+
+body {
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: 0;
+  background-image: url('img/bg.jpg'); 
+  background-size: cover;
+  background-attachment: fixed;
+  color: #FFFFFF;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('fonts/MonumentExtended-Regular.otf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2 {
+  font-family: 'Monument Extended', sans-serif;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+
+p, input, button {
+  font-family: 'Space Mono', monospace;
+}
+
+/* About Us Section */
+#about-us {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  gap: 20px; 
+}
+
+.about-container {
+  display: flex;
+  flex: 1;
+}
+
+.about-image {
+  max-width: 300px; 
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-text {
+  flex: 2; 
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.about-text h2 {
+  font-family: 'Monument Extended', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+
+
+/* Search Section */
+#search-bar {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.search input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #323231;
+  border: 1px solid #8C181D;
+  font-family: 'Space Mono', monospace;
+}
+
+.search button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #8C181D;
+  border: none;
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+}
+
+.search button:hover {
+  background-color: #3E4144;
+}
+
+#error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+/* Promotional Section */
+#promotions {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.promo-item {
+  background-color: #8A887E;
+  padding: 20px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* Join Now Section */
+#join-now {
+  text-align: center;
+  margin: 40px auto;
+}
+
+#join-now p {
+  margin-bottom: 20px; 
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  line-height: 1.5; 
+  color: #FFFFFF; 
+}
+
+/* Button Styling */
+.join-button {
+  display: inline-block; 
+  padding: 15px 30px;
+  background-color: #8C181D;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  font-family: 'Space Mono', monospace;
+  margin-top: 10px; 
+}
+
+.join-button:hover {
+  background-color: #3E4144;
+}

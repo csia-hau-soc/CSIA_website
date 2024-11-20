@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Intelligence Alliance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CYBERSECURITY INTELLIGENCE ALLIANCE</h1>
+    <p>ACADEMIC YEAR 2023-2024</p>
+  </header>
+
+  <main>
+    <!-- About Us Section -->
+    <section id="about-us">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>Welcome to the Cybersecurity Intelligence Alliance (CSIA).Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <img src="img/aboutUs_1.png" alt="About Us Portrait" class="about-image">
+    </section>
+    
+    
+
+    <!-- Search Bar Section -->
+    <section id="search-bar">
+      <h2>Search Member Details</h2>
+      <div class="search">
+          <input 
+            type="text" 
+            id="codename-input" 
+            placeholder="Enter codename or name..." 
+            onkeypress="handleKeyPress(event)"
+          >
+          <button onclick="searchMember()">Search</button>
+      </div>
+      <p id="error-message" class="hidden"></p>
+      <div id="member-details" class="hidden">
+        <h3 id="member-name"></h3>
+        <p id="member-role"></p>
+      </div>
+    </section>
+
+    <!-- Promotional Section -->
+    <section id="promotions">
+      <h2>Our Accomplishments and Merchandise</h2>
+      <div class="promo-grid">
+        <div class="promo-item">Accomplishment 1</div>
+        <div class="promo-item">Accomplishment 2</div>
+        <div class="promo-item">Merch Item 1</div>
+        <div class="promo-item">Merch Item 2</div>
+      </div>
+    </section>
+
+    <!-- Join Now Section -->
+    <section id="join-now">
+      <h2>Join Us</h2>
+      <p>Stay connected with us on Facebook and become a part of CSIA!</p>
+      <a href="https://www.facebook.com/csia.hausoc" target="_blank" class="join-button">Join Now</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
