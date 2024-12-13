@@ -83,3 +83,52 @@ function displayErrorMessage(input) {
     errorMessageElement.textContent = `"${input}" is not a member.`;
     errorMessageElement.classList.remove('hidden');
 }
+
+
+// Blog section
+document.addEventListener("DOMContentLoaded", function () {
+    const readMoreButtons = document.querySelectorAll(".read-more");
+  
+    readMoreButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const blogPost = button.closest(".blog-post");
+        const extraContent = blogPost.querySelector(".extra-content");
+  
+        // Close all other blog posts
+        document.querySelectorAll(".extra-content").forEach((content) => {
+          if (content !== extraContent) {
+            content.classList.remove("visible");
+            const otherPost = content.closest(".blog-post");
+            const otherButton = otherPost.querySelector(".read-more");
+            otherButton.textContent = "Read More";
+          }
+        });
+  
+        // Toggle the current blog post
+        if (extraContent.classList.contains("visible")) {
+          extraContent.classList.remove("visible");
+          button.textContent = "Read More";
+        } else {
+          extraContent.classList.add("visible");
+          button.textContent = "Read Less";
+        }
+      });
+    });
+  });
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
