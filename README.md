@@ -14,6 +14,10 @@
 
 3. **Image Adjustments**: 
    - Images need better alignment for a better appearance.
+  
+4. **General CSS Adjustments**: 
+   - The button needs to be aligned with each other on PC.
+   - and other small things
 
 ---
 
