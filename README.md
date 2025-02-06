@@ -1,24 +1,39 @@
-## Changes That I Made
+# Cybersecurity Intelligence Alliance (CSIA) Website  
 
-- Added the **Blog Section**.
-- Included **dates** and descriptive **text** for each blog post.
-- it's now responsive on all devices.
+## 📌 Project Overview  
+This is the official **Cybersecurity Intelligence Alliance (CSIA)** website, designed to provide information about the organization, its mission, vision, and various cybersecurity programs. The website serves as a digital hub for CSIA members and prospective students to explore cybersecurity education and initiatives.  
 
-## What Needs to Be Changed
+## 📢 Acknowledgment  
+This website was **created by Kenneth Santos and JB Reyes**. We acknowledge their efforts in designing and developing this platform for CSIA.  
 
-1. **Date Accuracy**: 
-   - Dates are placeholders and need to be updated with the correct values.
+## 🚫 Usage Disclaimer  
+- This website is **not for commercial use** and **cannot be replicated** in any form.  
+- Only **official CSIA officers** are authorized to edit or maintain the website.  
+- Unauthorized modifications or reproductions of this website are strictly prohibited.  
 
-2. **Button Behavior (PC)**: 
-   - When pressing the "Read More" button on one blog post, all other posts also expand. This needs to be fixed to ensure only the clicked post expands.
+## 🛠 Features  
+✔ **Responsive Design** – Optimized for both desktop and mobile users.  
+✔ **Interactive Modal System** – Clickable images that open in a modal view.  
+✔ **Dynamic Search System** – Allows users to search for CSIA members by name or codename.  
+✔ **Modern UI/UX** – Aesthetic design with glitch animations and cyber-themed elements.  
+✔ **Security-Oriented Content** – Informational sections about cybersecurity programs and career pathways.  
 
-3. **Image Adjustments**: 
-   - Images need better alignment for a better appearance.
-  
-4. **General CSS Adjustments**: 
-   - The button needs to be aligned with each other on PC.
-   - and other small things
+## 🔧 Technologies Used  
+- **HTML5** – Structure and layout  
+- **CSS3 (Flexbox & Grid)** – Styling and responsiveness  
+- **JavaScript (Vanilla JS)** – Interactivity and modal handling  
+- **JSON** – Data storage for member information  
 
----
-
-**-ynk**
+## 📂 Project Structure  
+```bash
+csia-website/
+│── assets/
+│   ├── css/        # Stylesheets
+│   ├── js/         # JavaScript functions
+│   ├── img/        # Images and icons
+│── index.html      # Homepage
+│── about.html      # About CSIA
+│── achievements.html # Achievements page
+│── join.html       # Membership page
+│── members.json    # Member data
+│── README.md       # Project documentation (this file)
