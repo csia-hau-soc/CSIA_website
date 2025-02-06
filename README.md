@@ -24,16 +24,3 @@ This website was **created by Kenneth Santos and JB Reyes**. We acknowledge thei
 - **JavaScript (Vanilla JS)** – Interactivity and modal handling  
 - **JSON** – Data storage for member information  
 
-## 📂 Project Structure  
-```bash
-csia-website/
-│── assets/
-│   ├── css/        # Stylesheets
-│   ├── js/         # JavaScript functions
-│   ├── img/        # Images and icons
-│── index.html      # Homepage
-│── about.html      # About CSIA
-│── achievements.html # Achievements page
-│── join.html       # Membership page
-│── members.json    # Member data
-│── README.md       # Project documentation (this file)
