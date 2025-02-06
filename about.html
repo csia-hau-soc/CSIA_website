@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>CSIA - About Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="join.html">Join Us</a></li>
+      </ul>
+    </nav>
+    <h1>Cybersecurity Intelligence Alliance</h1>
+  </header>
+
+  <!-- About Us Section -->
+  <main>
+    <section class="aboutus-container">
+      <div class="aboutus-card section1" onclick="openModal('img/section1.png')">
+        <div class="overlay">
+          <h2>What is Cybersecurity?</h2>
+          <p>Understanding the importance of cybersecurity in the modern digital era.</p>
+        </div>
+      </div>
+      <div class="aboutus-card section2" onclick="openModal('img/section2.png')">
+        <div class="overlay">
+          <h2>Cybersecurity Programs</h2>
+          <p>Explore the cybersecurity programs offered and career pathways.</p>
+        </div>
+      </div>
+      <div class="aboutus-card section3" onclick="openModal('img/section3.png')">
+        <div class="overlay">
+          <h2>Mission & Vision</h2>
+          <p>Our mission to foster a strong cybersecurity ecosystem for the future.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="fullImage">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024-2025 Cybersecurity Intelligence Alliance</p>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

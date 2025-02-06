@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cybersecurity Intelligence Alliance</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSIA - Member Search</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Header with Navigation -->
   <header>
-    <h1>CYBERSECURITY INTELLIGENCE ALLIANCE</h1>
-    <p>ACADEMIC YEAR 2024-2025</p>
+    <nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="join.html">Join Us</a></li>
+      </ul>
+    </nav>
+    <h1>Cybersecurity Intelligence Alliance</h1>
+    <p>Welcome to the Member Search Portal</p>
   </header>
 
+  <section id="hero">
+    <div class="hero-overlay">
+        <h2>Empowering the Next Generation of Cyber Defenders</h2>
+        <p>Building a strong cybersecurity community through awareness, education, and collaboration.</p>
+        <a href="about.html" class="cta-button">Learn More</a>
+    </div>
+</section>
+
+  
+
+  <!-- Main Content: Search Member Section -->
   <main>
-    <!-- About Us Section -->
-    <section id="about-us">
-      <div class="about-text">
-        <h2>About Us</h2>
-        <p>Welcome to the Cybersecurity Intelligence Alliance (CSIA). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <img src="img/aboutUs_1.png" alt="About Us Portrait" class="about-image">
-    </section>
-    
-    <!-- Search Bar Section -->
-    <section id="search-bar">
+    <section id="search-member">
       <h2>Search Member Details</h2>
       <div class="search">
-          <input 
-            type="text" 
-            id="codename-input" 
-            placeholder="Enter codename or name..." 
-            onkeypress="handleKeyPress(event)"
-          >
-          <button onclick="searchMember()">Search</button>
+        <input
+          type="text"
+          id="codename-input"
+          placeholder="Enter codename or name..."
+          onkeypress="handleKeyPress(event)"
+        />
+        <button onclick="searchMember()">Search</button>
       </div>
       <p id="error-message" class="hidden"></p>
       <div id="member-details" class="hidden">
@@ -40,110 +55,12 @@
         <p id="member-role"></p>
       </div>
     </section>
-
-    <section id="blog" class="blog-section">
-      <h2>Unstoppable CyberFoxes: Achievements Worth Celebrating</h2>
-      <div class="blog-container">
-        <!-- Blog Post 1 -->
-        <article class="blog-post">
-          <div class="blog-image-container">
-            <img src="img/victory-alert.jpg" alt="Behind the Screens" class="blog-image" />
-          </div>
-          <div class="blog-content">
-            <h3>Victory Alert: Behind Screens Triumphs</h3>
-            <p><strong>Date:</strong> January 2024</p>
-            <p>
-              Holy Angel University's School of Computing proudly celebrates a remarkable achievement as our team secured 
-              <strong>2nd Place</strong> in the <strong>Cyber Express Video Making Contest - Inter-School Edition</strong>.
-            </p>
-            <div class="extra-content hidden">
-              <p>This milestone is a testament to the hard work, creativity, and teamwork of our talented representatives:</p>
-              <ul>
-                <li>Dizon, Mitchell Louise D.</li>
-                <li>Dizon, John Andrew S.</li>
-                <li>Figueroa, Phoenix River G.</li>
-                <li>Flores, Alexandra Sofia P.</li>
-                <li>Tienzo, Krisean G.</li>
-              </ul>
-              <p>
-                We extend our gratitude to the organizers, <strong>CyberGuardiansPH</strong>, for this incredible opportunity to showcase our skills. Here's to more successes ahead as we continue to push boundaries and innovate.
-              </p>
-            </div>
-            <button class="read-more">Read More</button>
-          </div>
-        </article>
-    
-        <!-- Blog Post 2 -->
-        <article class="blog-post">
-          <div class="blog-image-container">
-            <img src="img/recap.jpg" alt="Capture-the-Flag Competition Recap" class="blog-image" />
-          </div>
-          <div class="blog-content">
-            <h3>Checkpoint: Capture-the-Flag Competition Recap</h3>
-            <p><strong>Date:</strong> March 2024</p>
-            <p>
-              The Capture-the-Flag competition tested the limits of problem-solving, cybersecurity expertise, and teamwork.
-            </p>
-            <div class="extra-content hidden">
-              <ul>
-                <li><strong>Deadma sa /bin/bashers</strong> (Champions): Angeles, Juliana Marie; Singson, John Florence; Castillo, Michaella; Garcia, Reinel</li>
-                <li><strong>Hack Tuah</strong> (1st Place): Dizon, Raji Miguel; Garcia, Justin Carl; Flores, Alexandra Sofia; Payawal, Kyle Eishley</li>
-                <li><strong>Tickle My Packets</strong> (2nd Place): Batibot, Jyro Godwin; Ceballos, Ardian Rey; Abenojar, Krausstian; Astudillo, Mandrake</li>
-              </ul>
-              <p>We also commend the efforts of other participating teams, including:</p>
-              <ul>
-                <li><strong>404:</strong> Macapagal, Joseph Daniel; Tongco, Francene Therese; Ignacio, Meryll Joy</li>
-                <li><strong>Halak Hack:</strong> Dayrit, Gabriel; Delos Santos, Hailey; Tayag, Michael; Yulianto, Arvin</li>
-              </ul>
-              <p>
-                From cryptography to vulnerability exploitation, the competition highlighted the exceptional skills and adaptability of all participants. Special thanks to the organizers, staff, and everyone involved in making this event a success.
-              </p>
-            </div>
-            <button class="read-more">Read More</button>
-          </div>
-        </article>
-    
-        <!-- Blog Post 3 -->
-        <article class="blog-post">
-          <div class="blog-image-container">
-            <img src="img/trendmicro-ctf.jpg" alt="CyberFoxes Lead Trend Micro CTF 2024" class="blog-image" />
-          </div>
-          <div class="blog-content">
-            <h3>ICYMI: CyberFoxes Lead Trend Micro CTF 2024</h3>
-            <p><strong>Date:</strong> September 2024</p>
-            <ul>
-              <li><strong>CyberFoxes AETHER</strong> secured the championship title, demonstrating unparalleled expertise.</li>
-              <li><strong>CyberFoxes SPADE</strong> earned an impressive 2nd place.</li>
-            </ul>
-            <p>
-              This achievement highlights the relentless pursuit of excellence by Holy Angel University’s School of Computing.
-            </p>
-            <button class="read-more">Read More</button>
-            <div class="extra-content hidden">
-              <p>For a full recap, visit the official article: 
-                <a href="https://theaccesspointhau.com/2024/09/20/icymi-hau-cyberfoxes-dominate-trend-micro-ctf-2024/" target="_blank">Read more</a>.
-              </p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-    
-    
-
-
-
-
-
-    <!-- Join Now Section -->
-    <section id="join-now">
-      <h2>Join Us</h2>
-      <p>Stay connected with us on Facebook and become a part of CSIA!</p>
-      <a href="https://www.facebook.com/csia.hausoc" target="_blank" class="join-button">Join Now</a>
-    </section>
   </main>
 
-
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024-2025 Cybersecurity Intelligence Alliance</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
